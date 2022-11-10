@@ -76,10 +76,21 @@
 
     <!-- Уникальный контент этой страницы -->
     <main>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="backdrop-button" data-modal-close>
+            <svg class="svg-backdrop-button">
+              <use href="./images/symbol-defs.svg#icon-backdrop-close" width="18px" height="18px"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <section class="hero overlay-hero">
         <div class="hero-div container">
           <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="main-list-item">
@@ -87,63 +98,62 @@
           <!-- визуально скрытый -->
           <h2 class="visually-hidden">h2 main</h2>
           <div class="main-div-list">
-          <ul class="main-list-link list">
-            <li class="main-link-item">
-              <div class="icon-main-div">
-                <svg class="icon-main" height="70" width="70">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-              </div>
-              
-              <h3 class="main-list-topic list">УВАГА ДО ДЕТАЛЕЙ</h2>
-              <p class="main-list-paragraph">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
+            <ul class="main-list-link list">
+              <li class="main-link-item">
+                <div class="icon-main-div">
+                  <svg class="icon-main" height="70" width="70">
+                    <use href="./images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </div>
 
-            <li class="main-link-item">
-              <div class="icon-main-div">
-                <svg class="icon-main" height="70" width="70">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
+                <h3 class="main-list-topic list">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="main-list-paragraph">
+                  Ідейні міркування, і навіть початок повсякденної роботи з
+                  формування позиції.
+                </p>
+              </li>
 
-              </div>
+              <li class="main-link-item">
+                <div class="icon-main-div">
+                  <svg class="icon-main" height="70" width="70">
+                    <use href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
 
-              <h3 class="main-list-topic list">ПУНКТУАЛЬНІСТЬ</h2>
-              <p class="main-list-paragraph">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
+                <h3 class="main-list-topic list">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="main-list-paragraph">
+                  Завдання організації, особливо рамки і місце навчання кадрів
+                  тягне у себе.
+                </p>
+              </li>
 
-            <li class="main-link-item">
-              <div class="icon-main-div">
-                <svg class="icon-main" height="70" width="70">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
+              <li class="main-link-item">
+                <div class="icon-main-div">
+                  <svg class="icon-main" height="70" width="70">
+                    <use href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
 
-              </div>
-              
-              <h3 class="main-list-topic list">ПЛАНУВАННЯ</h2>
-              <p class="main-list-paragraph">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
+                <h3 class="main-list-topic list">ПЛАНУВАННЯ</h3>
+                <p class="main-list-paragraph">
+                  Так само консультація з широким активом значною мірою
+                  зумовлює.
+                </p>
+              </li>
 
-            <li class="main-link-item">
-              <div class="icon-main-div">
-              <svg class="icon-main" height="70" width="70">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-              </div>
-              <h3 class="main-list-topic list">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-              <p class="main-list-paragraph">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
+              <li class="main-link-item">
+                <div class="icon-main-div">
+                  <svg class="icon-main" height="70" width="70">
+                    <use href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="main-list-topic list">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="main-list-paragraph">
+                  Значимість цих проблем настільки очевидна, що реалізація
+                  планових завдань.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -400,34 +410,33 @@
       <div class="social-footer container">
         <strong class="footer-social-text">приєднуйтесь</strong>
         <ul class="footer-social-icons list link">
-                  <li class="footer-social-items">
-                    <a href="" class="footer-social-link link"
-                      ><svg class="social-icon">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="footer-social-items">
-                    <a href="" class="footer-social-link link"
-                      ><svg class="social-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg
-                    ></a>
-                  </li>
-                  <li class="footer-social-items">
-                    <a href="" class="footer-social-link link"
-                      ><svg class="social-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg
-                    ></a>
-                  </li>
-                  <li class="footer-social-items">
-                    <a href="" class="footer-social-link link"
-                      ><svg class="social-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg
-                    ></a>
-                  </li>
-                </ul>
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link link"
+              ><svg class="social-icon">
+                <use href="./images/icons.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link link"
+              ><svg class="social-icon">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link link"
+              ><svg class="social-icon">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link link"
+              ><svg class="social-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use></svg
+            ></a>
+          </li>
+        </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
