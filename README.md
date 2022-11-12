@@ -1,26 +1,8 @@
 # goit-markup-hw-05
 
-overflow для меин
-
-opacity для анимации
-transition 250ms?   
 
 
-
-header это просто актив линк страницы тоесть на какой ты щас
-
-
-
-
-
-
-
-
-
-
-
-
-.teamjob-images-list .img-wrapper {
+<!-- .teamjob-images-list .img-wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -40,8 +22,7 @@ header это просто актив линк страницы тоесть н�
   padding: 20px;
   transition: transform 500ms linear;
 
-}
+} -->
+<!-- заметки -->
 
 
-
-Пример как сделать портфолио
