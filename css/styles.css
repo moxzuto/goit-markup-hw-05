@@ -280,7 +280,46 @@ h3 {
   padding-bottom: 94px;
 }
 
-.team-images-link:nth-child(2) {
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-images-description {
+  display: flex;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-right: 113px;
+  padding-left: 113px;
+  
+  white-space: nowrap;
+  max-width: 370px;
+  max-height: 70px;
+
+  justify-content: center;
+  align-items: center;
+  
+  
+  bottom: 0px;
+}
+
+
+.images-description-text {
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+
+
+
+.image-wrapper:nth-child(2) {
   margin-right: 30px;
   margin-left: 30px;
 }
@@ -317,7 +356,6 @@ h3 {
   overflow: hidden;
 }
 
-/* просто практиковался потом изменю на правильно */
 
 .icon-main {
   display: inline-block;
@@ -370,8 +408,6 @@ h3 {
   border-radius: 50%;
   fill: #ffffff;
 
-
-  
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -635,7 +671,47 @@ h3 {
 
 .teamjob-images-list {
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
+
+
+.portfolio-images-description {
+  background-color: rgba(33, 150, 243, 0.9);;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.portfolio-images-list:hover .portfolio-images-description {
+  transform: translateY(0);
+}
+
+
+
+
+
+.portfolio-description-text {
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+
 
 .portfolio-topic-text {
   font-weight: 700;
@@ -673,7 +749,10 @@ h3 {
   background-color: var(--accent-color);
   padding: 6px 22px;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button-list {
@@ -701,4 +780,8 @@ h3 {
 .portfolio-main-link-button:hover {
   display: block;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -25,7 +25,7 @@ header это просто актив линк страницы тоесть н�
   overflow: hidden;
 }
 
-.team-dopic-description {
+. {
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
   bottom: 0;
